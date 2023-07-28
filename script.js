@@ -127,10 +127,19 @@ function startGame() {
       case " ":
         jump();
         break;
+      case "j":
+        jump();
+        break;
       case "ArrowRight":
         marioMovingRight = true;
         break;
+      case "r":
+        marioMovingRight = true;
+        break;
       case "ArrowLeft":
+        marioMovingLeft = true;
+        break;
+      case "l":
         marioMovingLeft = true;
         break;
     }
@@ -142,7 +151,13 @@ function startGame() {
       case "ArrowRight":
         marioMovingRight = false;
         break;
+      case "r":
+        marioMovingRight = false;
+        break;
       case "ArrowLeft":
+        marioMovingLeft = false;
+        break;
+      case "l":
         marioMovingLeft = false;
         break;
     }
